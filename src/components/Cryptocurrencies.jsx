@@ -8,6 +8,7 @@ import { useGetCryptosQuery } from "../services/cryptoApi";
 import Loader from "./Loader";
 import { motion } from "framer-motion";
 import LoadingAnim from "./LoadingAnim";
+
 const Cryptocurrencies = ({ simplified }) => {
   const count = simplified ? 10 : 100;
   const { data: cryptosList, isFetching } = useGetCryptosQuery(count);
